@@ -1,0 +1,14 @@
+create database cj_10_12;
+use cj_10_12;
+create table product
+(product_id int primary key,
+product_name varchar(50),
+price decimal(10,2),
+quantity int);
+
+insert into product values(10,"pencils",10.5,80);
+
+select * from product;
+
+insert into product values (20,"pen",50.5,100); 
+insert into product values (30,"crayons",100,30); 

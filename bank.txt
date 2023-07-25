@@ -1,0 +1,38 @@
+interface Bank{
+	int getBalance();
+
+}
+
+class BankA implements Bank{
+	int balance = 100;
+	@Override
+	public int getBalance() {
+	return balance;
+	}
+}
+	
+class BankB implements Bank{
+	int balance = 150;
+	@Override
+	public int getBalance() {
+	return balance;
+	}
+}
+	
+class BankC implements Bank{
+	int balance = 200;
+	@Override
+	public int getBalance() {
+	return balance;
+	}
+}
+public class BankMain{
+	public static void main(String[] args) {
+	BankA ba = new BankA();
+	System.out.println("Bank A Balance: "+ba.getBalance());
+	BankB bb = new BankB();
+	System.out.println("Bank B Balance: "+bb.getBalance());
+	BankC bc = new BankC();
+	System.out.println("Bank C Balance: "+bc.getBalance());
+	}
+}

@@ -1,0 +1,4 @@
+to create database file -> create database cj_10_12;
+to create table product 
+ (product_id int primary key)
+ product_name varchar(20) 
